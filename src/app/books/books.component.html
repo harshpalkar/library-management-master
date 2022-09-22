@@ -1,7 +1,8 @@
 <div class="text-center display-6 welcome">{{msg}}</div>
-<table>
-    <tr class="heading">
-        <th>Serial</th>
+<div class="container">
+    <table>
+        <tr class="heading">
+            <th>Serial</th>
         <th>Books</th>
         <th>Authors</th>
         <th>Quantity</th>
@@ -14,9 +15,11 @@
         <td><button class="btn btn-dark" (click) = "viewBook(target)">View</button></td>
     </tr>
 </table>
-
-<button class="btn btn-success" routerLink="add">Add new Book</button>
-<button class="btn btn-success" routerLink="issue">Issue a Book</button>
-<br>
-<br>
+<div class="buttons">
+    <button class="btn btn-success" routerLink="add">Add new Book</button>
+    <button class="btn btn-success issue" routerLink="issue">Issue a Book</button>
+</div>
+</div>
+<!-- <br>
+<br> -->
 <router-outlet></router-outlet>

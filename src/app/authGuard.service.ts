@@ -15,7 +15,7 @@ export class AuthGuard implements CanActivate {
         if(authenticated){
           return true;
         }else{
-          this.router.navigate(['./login'])
+          this.router.navigate(['./books'])
           alert("You are not an admin")
           return false
         }

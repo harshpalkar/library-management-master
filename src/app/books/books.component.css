@@ -42,6 +42,7 @@ td {
 
 .btn {
     font-family: 'Inter';
+    height: max-content;
 }
 
 .form-group {
@@ -127,4 +128,18 @@ td {
 .cancel {
     margin-left: 3px;
     margin-top: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.issue{
+    margin-top: 30px;
 }
