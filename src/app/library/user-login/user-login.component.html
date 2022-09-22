@@ -1,0 +1,16 @@
+<div class="mainContainer">
+  <h1 id="heading">LIBRARY</h1>
+  
+  <input type="text" class="form-control" #inputName id="userName" placeholder="Username" aria-label="Username"
+    aria-describedby="basic-addon1" (keyup)="thisFunction()">
+  <ng-template #cautionElse>
+    <div class="cautionElse" [hidden]="isHidden">Enter your name</div>
+  </ng-template>
+  <button class="btn btn-outline-dark" (click)="hi(inputName)" [class.btnClass]="true">Enter</button>
+  <div class="desc">
+    {{msg}}
+  </div>
+  <div class="caution" *ngIf="isValid; else cautionElse">Enter a valid name!</div>
+  
+  <button class="btn btn-primary" [disabled] = "isDisabled" [routerLink]="['/books']" routerLinkActive="router-link-active" >Go to Books</button>
+</div>

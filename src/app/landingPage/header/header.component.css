@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
+.nav-tabs{
+    font-family: 'Inter';
+}
+nav{
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .nav-tabs{
+    --bs-nav-tabs-border-width : 0px;
+} */
+.hi{
+    border: 1px solid blue;
+    border: none !important;
+}
+.navbar-text{
+    font-family: 'Inter';
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}

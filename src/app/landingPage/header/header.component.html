@@ -1,0 +1,10 @@
+<header class="head" >
+  <nav>
+      <ul class="nav nav-tabs hi justify-content-between">
+        <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/">Home</a></li>
+          <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/login">Library</a></li>
+          <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/books">Books </a></li>
+          <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/landingpage" (click)="logout()">Logout </a></li>
+        </ul>  
+  </nav>
+</header>

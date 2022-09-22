@@ -1,0 +1,22 @@
+<div class="text-center display-6 welcome">{{msg}}</div>
+<table>
+    <tr class="heading">
+        <th>Serial</th>
+        <th>Books</th>
+        <th>Authors</th>
+        <th>Quantity</th>
+    </tr>
+    <tr *ngFor="let item of hi ; index as i">
+        <td #target>{{i+1}}</td>
+        <td>{{item.Book}}</td>
+        <td>{{item.Author}}</td>
+        <td>{{item.Quantity}}</td>
+        <td><button class="btn btn-dark" (click) = "viewBook(target)">View</button></td>
+    </tr>
+</table>
+
+<button class="btn btn-success" routerLink="add">Add new Book</button>
+<button class="btn btn-success" routerLink="issue">Issue a Book</button>
+<br>
+<br>
+<router-outlet></router-outlet>

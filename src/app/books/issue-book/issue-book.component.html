@@ -1,0 +1,19 @@
+<div class="container1">
+  <form id="form2" #myform='ngForm' (ngSubmit)="onSubmit(myform)">
+      <div class="col-md-4">
+          <select name="Book" ngModel class="form-control" id="books">
+            <option value="">Issue a book</option>
+          <ng-container *ngFor="let item of hi">
+              <option value={{item.Book}}>{{item.Book}}</option>
+          </ng-container>
+
+</select>
+          <button class="btn btn-dark issue">Issue</button>
+          <div class="tp">or</div>
+      </div>
+  </form>
+  <button class="btn btn-danger" (click)="returnBook(myform)">Return</button>
+  <div class="issuedBook">
+      {{issuedBook}}
+  </div>
+</div>

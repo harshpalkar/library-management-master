@@ -1,0 +1,32 @@
+.form-group {
+    font-family: 'Inter';
+    margin-left: 4px;
+}
+
+.form-control {
+    width: 300px;
+    font-family: Inter;
+}
+
+.forms {
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.none {
+    display: none;
+}
+.new{
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    font-family: 'Inter';
+    margin: 4px;
+}
+
+.cancel{
+    font-family: 'Inter';
+}

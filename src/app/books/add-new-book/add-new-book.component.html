@@ -1,0 +1,24 @@
+<div class="forms">
+  <form id="form1">
+      <div class="formContainer" >
+          <div class="form-group">
+              <label for="newBookName">Enter Book Name</label>
+              <input type="text" #book class="form-control" id="newBookName">
+          </div>
+          <div class="form-group">
+              <label for="newBookAuthor">Author</label>
+              <input type="text" #author class="form-control" id="newBookAuthor">
+          </div>
+          <button type="submit" class="btn btn-dark submit" (click)="addBook(book, author)">Submit</button>
+          <span>
+      <button type="reset" class="btn btn-danger cancel" (click)="cancelBook()">Cancel</button>
+  </span>
+</div>
+</form>
+</div>
+<br>
+<div class="new">
+    {{bookAdd}}
+</div>
+<!-- 
+<p>HEllo</p> -->
