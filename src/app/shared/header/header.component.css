@@ -19,3 +19,15 @@ nav{
     margin-right: 30px;
     color: rgb(0, 0, 0);
 }
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: 'Inter';
+    padding: 5px;
+    margin-right: 40px;
+}

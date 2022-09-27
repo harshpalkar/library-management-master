@@ -13,13 +13,13 @@ import { coreModule } from './core/core.module';
 
 
 @NgModule({
-  declarations: [												
+  declarations: [													
     AppComponent,
       HeaderComponent,
       LibraryComponent,
       UserLoginComponent,
       LandingPageComponent,
-      HeaderComponent
+      HeaderComponent,
    ],
   imports: [
     BrowserModule,

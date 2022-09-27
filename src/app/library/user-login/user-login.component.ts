@@ -33,7 +33,7 @@ export class UserLoginComponent implements OnInit {
   msg:string = "";
   issued : string = ""
   user:string =  ""
-
+  displayHidden : boolean = true
 
   set(name:string){
     if(name === ""){

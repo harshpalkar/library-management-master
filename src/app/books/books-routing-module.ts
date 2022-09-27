@@ -4,7 +4,7 @@ import { AuthGuard, canDeactivateGuard } from "../authGuard.service";
 import { AddNewBookComponent } from "./add-new-book/add-new-book.component";
 import { BooksComponent } from "./books.component";
 import { IssueBookComponent } from "./issue-book/issue-book.component";
-import { ViewComponent } from "./view/view.component";
+import { ViewComponent } from "./view-book/view.component";
 
 const bookRoute : Routes = [
    {path:'', children:[
