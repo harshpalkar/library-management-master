@@ -32,11 +32,6 @@ import { AuthServiceService } from './authService.service';
     landingpageRoutingModule,
     coreModule
   ],
-  providers : [
-    AuthGuard,
-    canDeactivateGuard,
-    AuthServiceService
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
