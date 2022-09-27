@@ -24,4 +24,8 @@ export class AddNewBookComponent implements OnInit {
     this._books.addBook(book.value,author.value)
    }
    bookAdd : string = this._books.bookadd;
-}
+
+   goback(){
+    this.route.navigate(['books'])
+   }
+  }
