@@ -5,6 +5,7 @@ import { DebugElement } from '@angular/core';
 
 import { ViewComponent } from './view.component';
 
+
 describe('ViewComponent', () => {
   let component: ViewComponent;
   let fixture: ComponentFixture<ViewComponent>;

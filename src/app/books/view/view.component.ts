@@ -29,4 +29,7 @@ export class ViewComponent implements OnInit {
   }
   paramId : any;
   book: any;
+  id:string = 'id';
+  author:string = 'author'
+  books:string = 'book'
 }
