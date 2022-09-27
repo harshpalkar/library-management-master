@@ -26,7 +26,7 @@ export class AddNewBookComponent implements OnInit, canComponentDeactivate {
   author:string = ''
   addBook(book :any, author : any){
     this.bookAdd = `You added ${book}`
-    this._books.addBook(book.value,author.value)
+    this._books.addBook(book,author)
    }
    bookAdd : string = this._books.bookadd;
 
@@ -35,7 +35,8 @@ export class AddNewBookComponent implements OnInit, canComponentDeactivate {
    }
 
    submitForm(form:NgForm){
-    this.addBook(this.book,this.author)
+    console.log(form)
+    this.addBook(form.value.book,form.value.author)
     this.book = ""
     this.author = ""
    }

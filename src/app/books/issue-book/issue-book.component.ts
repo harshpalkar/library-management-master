@@ -1,3 +1,4 @@
+import { formatCurrency } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -23,12 +24,19 @@ export class IssueBookComponent implements OnInit {
   issuedBook : string = "";
   isFormHidden : boolean = true;
   currentUser : any;
+  
   onSubmit(myform : NgForm){
     if(this._username.finalUser && this._book.currentLoggedIn.name.length === 0 ){
       alert("Please Log in First")
       this.router.navigate(['/eventBind'])
     }else{
-      this._book.onSubmit(myform, this.currentUser);
+      console.log(myform.value);
+      if(myform.value.Book.length > 0){
+        this._book.onSubmit(myform.value.Book);
+      }else{
+        alert('Please select a book')
+      }
+
       // this.temp.push(myform.value)
       // console.log(this.temp);
       console.log('books ->',this._book.userData)
@@ -39,7 +47,7 @@ export class IssueBookComponent implements OnInit {
     this.isFormHidden = false;
   }
   returnBook(myform : NgForm){
-    this._book.returnBook(myform)
+    this._book.returnBook()
   }
   goback(){
     this._route.navigate(['books'])

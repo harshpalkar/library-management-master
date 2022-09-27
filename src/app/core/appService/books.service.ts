@@ -1,3 +1,4 @@
+import { formatCurrency } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { BehaviorSubject, elementAt } from 'rxjs';
@@ -58,6 +59,7 @@ getBook(id:any){
 }
 
 addBook(Book : string, Author : string){
+  console.log(Book,Author)
   const lastBook = this.data.slice(-1)[0]
   let obj = {
     id : Number(lastBook.id + 1),
@@ -82,47 +84,54 @@ addBook(Book : string, Author : string){
 
 bookarr:any = []
 issuedBook : string = ""
-onSubmit(myform : NgForm, name:string){
-  console.log(myform);
-  console.log('->>>>>>>>.',myform.value);
-      if(this.bookarr.length === 0){
-        const temp = this.data.map((item)=>{
-          if(item.Book === myform.value.Book){
-            if(item.Quantity ===0){
-              alert("No more books left to be issued")
+onSubmit(bookname:string){
+  console.log(bookname)
+    this.userData.map(ele => {
+      if(ele.Name === this.currentLoggedIn.name){
+        if(ele.Issued.length === 0){
+          ele.Issued.push(bookname)
+          this.data.map(ele => {
+            if(ele.Book === bookname){
+              ele.Quantity -= 1
             }
-            else{
-              item.Quantity -=1;
-              this.userData.map(ele =>{
-                if(ele.Name === name){
-                  ele.Issued.push(myform.value)
-                }
-              })
-            }
-          }
-        })
-        alert("Book issued")
-        this.bookarr.push(myform.value.Book)
-      }else{
-        alert("You've already issued a book")
+          })
+          alert(`${bookname} issued`)
+        }else{
+          alert("Please return the issued book first")
+        }
       }
+    })
+
+  console.log(this.userData)
+
   }
 
-returnBook(myform : NgForm){
-  const temp = this.data.filter((item)=> {
-    if(item.Book === myform.value.Book){
-      alert("Book returned")
-      item.Quantity +=1;
-      this.bookarr.pop(myform.value.Book)
+returnBook(){
+  this.userData.map(ele => {
+    if(ele.Name === this.currentLoggedIn.name){
+      const name = ele.Issued[0]
+      if(ele.Issued.length === 0){
+        alert('Please issue a book first')
+      }else{
+
+        ele.Issued.pop()
+        alert(`${name} returned`)
+        this.data.map(el => {
+          if(el.Book === name){
+            el.Quantity += 1
+          }
+        })
+      }
     }
   })
+  console.log(this.userData)
 }
 
 
 userData = [
   {
     Name : 'Harsh',
-    Issued : ['abc', 'pqr']
+    Issued : ['abc']
   }
 ]
 
