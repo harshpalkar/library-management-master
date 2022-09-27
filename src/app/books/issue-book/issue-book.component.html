@@ -1,3 +1,6 @@
+<div class="back">
+  <button class="btn btn-dark back" (click)="goback()">Back</button>
+</div>
 <div class="container1">
   <form id="form2" #myform='ngForm' (ngSubmit)="onSubmit(myform)">
       <div class="col-md-4">
@@ -12,7 +15,7 @@
           <div class="tp">or</div>
       </div>
   </form>
-  <button class="btn btn-danger" (click)="returnBook(myform)">Return</button>
+  <button class="btn btn-danger return" (click)="returnBook(myform)">Return</button>
   <div class="issuedBook">
       {{issuedBook}}
   </div>

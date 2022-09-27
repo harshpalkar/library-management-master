@@ -11,7 +11,7 @@ import { landingpageRoutingModule } from './landingPage/landingpage-routing-modu
 import { SharedModule } from './shared/shared.module';
 import { coreModule } from './core/core.module';
 import { booksModule } from './books/books.module';
-import { AuthGuard } from './authGuard.service';
+import { AuthGuard, canDeactivateGuard } from './authGuard.service';
 import { AuthServiceService } from './authService.service';
 
 
@@ -32,6 +32,11 @@ import { AuthServiceService } from './authService.service';
     landingpageRoutingModule,
     coreModule
   ],
-  bootstrap: [AppComponent,AuthGuard,AuthServiceService]
+  providers : [
+    AuthGuard,
+    canDeactivateGuard,
+    AuthServiceService
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

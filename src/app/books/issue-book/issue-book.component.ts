@@ -41,5 +41,8 @@ export class IssueBookComponent implements OnInit {
   returnBook(myform : NgForm){
     this._book.returnBook(myform)
   }
+  goback(){
+    this._route.navigate(['books'])
+   }
 
 }
