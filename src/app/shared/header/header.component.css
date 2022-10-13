@@ -25,9 +25,15 @@ nav{
 }
 
 .user{
-    border: 2px solid black;
-    border-radius: 8px;
     font-family: 'Inter';
-    padding: 5px;
+    padding: 10px;
+    font-size: 18px;
     margin-right: 40px;
+}
+
+.h{
+    display: none;
+}
+.fa-user{
+    font-size: 10px;
 }

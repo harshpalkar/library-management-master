@@ -12,5 +12,6 @@ constructor() {
 
 
 finalUser = new BehaviorSubject<string>('Guest');
+currentUser = new BehaviorSubject<string>('')
 
 }

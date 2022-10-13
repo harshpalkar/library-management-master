@@ -4,11 +4,14 @@
         <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/">Home</a></li>
           <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/login">Library</a></li>
           <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/books">Books </a></li>
-          <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/landingpage" (click)="logout()">Logout </a></li>
+          <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/landingpage" (click)="logout()">Logout</a></li>
         </ul>  
         </nav>
         
-        <!-- <div class="user">
-          {{user}}
-        </div> -->
+        <div class="user"  *ngIf="CurrentUser.length > 0"> 
+          <i class="fa-solid fa-user">
+            
+          </i>
+            {{CurrentUser}}
+          </div>
 </header>

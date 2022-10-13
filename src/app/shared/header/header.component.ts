@@ -12,13 +12,16 @@ export class HeaderComponent implements OnInit  {
   vis:boolean = false
 
   constructor(private _data : BooksService,private _user : UsernameService) {
+    this.CurrentUser = ''
     this._data.visible.subscribe(val =>  this.vis = val )
+    this._user.currentUser.subscribe(val => this.CurrentUser = val)
   } 
 
   ngOnInit() {
    
   }
 
+  CurrentUser : string;
 
 
 
@@ -26,6 +29,7 @@ export class HeaderComponent implements OnInit  {
   logout(){
     this._data.currentLoggedIn.name = ""
     this._data.changeVisible()
+    this._user.currentUser.next('')
   }
   user : String = this._data.currentLoggedIn.name;
 

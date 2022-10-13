@@ -67,6 +67,7 @@ export class UserLoginComponent implements OnInit {
   }
 
   hi(val:any){
+    this._userName.currentUser.next(val.value)
     this.set(val.value)
     this._userName.finalUser.next(val.value)
     this._book.changeVisible()
