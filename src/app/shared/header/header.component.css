@@ -37,3 +37,27 @@ nav{
 .fa-user{
     font-size: 10px;
 }
+
+.user-img{
+    height: 25px;
+    width: 25px;
+}
+
+.card {
+    padding: 5px 10px;
+    font-size: 15px;
+    display: none;
+    position: absolute;
+}
+
+.card:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.user-img:hover ~ .card {
+    display: block;
+}
+.user-img:hover {
+    cursor: pointer;
+}
