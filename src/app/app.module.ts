@@ -10,6 +10,7 @@ import { appRoutingModule } from './app-routing-module';
 import { landingpageRoutingModule } from './landingPage/landingpage-routing-module';
 import { SharedModule } from './shared/shared.module';
 import { coreModule } from './core/core.module';
+import { LogoutComponent } from './shared/header/logout/logout.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { coreModule } from './core/core.module';
       UserLoginComponent,
       LandingPageComponent,
       HeaderComponent,
+      LogoutComponent
    ],
   imports: [
     BrowserModule,

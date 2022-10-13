@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from 'src/app/core/appService/books.service';
+import { UsernameService } from 'src/app/core/appService/username.service';
 
 @Component({
   selector: 'app-logout',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _data : BooksService, private _user : UsernameService) { }
 
   ngOnInit() {
   }

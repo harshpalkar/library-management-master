@@ -33,6 +33,7 @@ export class IssueBookComponent implements OnInit {
       console.log(myform.value);
       if(myform.value.Book.length > 0){
         this._book.onSubmit(myform.value.Book);
+        this._route.navigate(['./books'])
       }else{
         alert('Please select a book')
       }
