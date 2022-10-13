@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit  {
 
 
   logout(){
-    if(confirm("Are you sure")){
+    if(confirm("Are you sure you want to logout?")){
       this._data.currentLoggedIn.name = ""
       this._data.changeVisible()
       this._user.currentUser.next('')
