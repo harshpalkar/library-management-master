@@ -1,96 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
-.btnClass{
-    font-family: 'Inter';
-}
-*{
-    margin: 4px;
-}
-#heading{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap");
+.btnClass {
     font-family: "Inter";
 }
-.mainContainer{
+
+* {
+    margin-top: 6px;
+}
+
+#heading {
+    font-family: "Inter";
+}
+
+.mainContainer {
     display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins";
+    background-color: rgb(1, 3, 20);
+    color: whitesmoke;
 }
-.bookDesc{
+
+.bookDesc {
     font-family: Inter;
     font-size: 16px;
     text-align: center;
     filter: opacity(0.5);
 }
-/* .container{
-    margin-left: 0px;
-} */
-.btn{
+
+.btn {
     text-align: center;
-    font-family: 'Inter';
+    font-family: "Inter";
 }
-.issuedBooks{
-    font-family: 'Inter';
+
+.issuedBooks {
+    font-family: "Inter";
 }
-.desc{
+
+.btn-outline-dark {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.desc {
     font-family: Inter;
     font-size: 20px;
 }
-.form-control{
+
+.form-control {
     width: 300px;
     font-family: Inter;
 }
-.caution{
+
+.caution {
     font-family: Inter;
     font-size: 16px;
     color: red;
 }
-.cautionElse{
+
+.cautionElse {
     font-family: Inter;
     font-size: 16px;
     filter: opacity(0.5);
 }
+
 .b {
     color: rgb(8, 2, 48);
 }
-.container1{
+
+.container1 {
     text-align: center;
 }
-.tp{
-position: relative;
-width: max-content;
-left: 150px;
-opacity: 0.6;
 
+.tp {
+    position: relative;
+    width: max-content;
+    left: 150px;
+    opacity: 0.6;
 }
 
-.tp::before, .tp::after {
-content:"";
-position: absolute;
-width: 20px;
-height: 1px;
-background-color: black;
-
+.tp::before,
+.tp::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: black;
 }
 
-.tp::before{
-left: -200%;
-top: 50%;
+.tp::before {
+    left: -200%;
+    top: 50%;
 }
 
 .tp::after {
-right: -200%;
-top: 50%;
-}
-.issuedBook{
-    font-family: 'Inter';
+    right: -200%;
+    top: 50%;
 }
 
-.user{
+.issuedBook {
+    font-family: "Inter";
+}
+
+.user {
     border: 2px solid black;
     border-radius: 8px;
-    font-family: 'Inter';
+    font-family: "Inter";
     padding: 5px;
     margin-right: 40px;
 }
-.none{
+
+.none {
     display: none;
 }

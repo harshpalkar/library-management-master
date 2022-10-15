@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
-.head{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap");
+.head {
     height: 7vh;
 }
-.nav-item{
-    font-size: 18px;
-    font-family: 'Inter';
-    padding: 2px;
 
+.nav-item {
+    font-size: 18px;
+    font-family: "Inter";
+    padding: 2px;
 }
-.nav{
+
+.nav {
     font-size: 15px;
     border: none;
+}
+
+body {
+    background-color: black;
 }

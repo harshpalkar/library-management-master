@@ -1,22 +1,26 @@
-<header class="head" >
-  <nav>
-      <ul class="nav nav-tabs hi justify-content-between">
-        <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/">Home</a></li>
-          <li class="nav nav-item "><a class="nav-link active hi" routerLink = "/login">Library</a></li>
-          <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/books">Books </a></li>
-          <!-- <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/landingpage" (click)="logout()">Logout</a></li> -->
-        </ul>  
-        </nav>
-        
-        <div class="user"  *ngIf="CurrentUser.length > 0"> 
-          <i class="fa-solid fa-user">
-            
-          </i>
-            <div class="hi">
-              <img class="user-img" src="../../../assets/user.png" /> {{CurrentUser}}
-              <div class="card">
+<header class="head">
+    <nav>
+        <ul class="nav nav-tabs hi justify-content-between">
+            <li class="nav nav-item">
+                <a class="nav-link active hi" routerLink="/">Home</a>
+            </li>
+            <li class="nav nav-item">
+                <a class="nav-link active hi" routerLink="/login">Library</a>
+            </li>
+            <li *ngIf="vis" class="nav nav-item">
+                <a class="nav-link active hi" routerLink="/books">Books </a>
+            </li>
+            <!-- <li *ngIf="vis"  class="nav nav-item "><a class="nav-link active hi" routerLink = "/landingpage" (click)="logout()">Logout</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="user" *ngIf="CurrentUser.length > 0">
+        <i class="fa-solid fa-user"> </i>
+        <div class="hi">
+            <img class="user-img" src="../../../assets/icons8-male-user-30.png" /> {{ CurrentUser }}
+            <div class="card">
                 <button (click)="logout()" class="btn btn-danger">Logout</button>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 </header>

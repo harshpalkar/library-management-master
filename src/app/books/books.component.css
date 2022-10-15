@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 table,
@@ -10,7 +11,7 @@ tr {
     border: 5px solid white;
     border-collapse: collapse;
     font-size: 20px;
-    font-family: 'Inter';
+    font-family: "Inter";
 }
 
 th,
@@ -37,16 +38,16 @@ td {
 }
 
 .welcome {
-    font-family: 'SF pro display';
+    font-family: "SF pro display";
 }
 
 .btn {
-    font-family: 'Inter';
+    font-family: "Inter";
     height: max-content;
 }
 
 .form-group {
-    font-family: 'Inter';
+    font-family: "Inter";
     margin-left: 4px;
 }
 
@@ -88,7 +89,7 @@ td {
 }
 
 .issuedBook {
-    font-family: 'Inter';
+    font-family: "Inter";
 }
 
 .btn-success {
@@ -129,17 +130,21 @@ td {
     margin-left: 3px;
     margin-top: 5px;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.issue{
+.issue {
     margin-top: 30px;
 }

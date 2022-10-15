@@ -1,9 +1,10 @@
 .table {
-    font-family: 'Inter';
+    font-family: "Inter";
     border: 4px;
 }
+
 .container {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 18px;
     text-align: center;
     box-sizing: border-box;
@@ -11,11 +12,12 @@
     margin-left: 400px;
     width: 600px;
 }
-.table-container{
-    padding: 0px 150px 0px 150px ;
+
+.table-container {
+    padding: 0px 150px 0px 150px;
 }
 
-#description{
+#description {
     color: green;
     text-align: center;
     text-decoration: underline;
