@@ -3,9 +3,7 @@
     font-family: "Inter";
 }
 
-* {
-    margin-top: 6px;
-}
+
 
 #heading {
     font-family: "Inter";
@@ -22,6 +20,10 @@
     font-family: "Poppins";
     background-color: rgb(1, 3, 20);
     color: whitesmoke;
+}
+
+.mainContainer > * {
+    margin-top: 6px;
 }
 
 .bookDesc {
@@ -116,3 +118,4 @@
 .none {
     display: none;
 }
+
