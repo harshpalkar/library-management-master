@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { AuthGuard, canDeactivateGuard } from "../authGuard.service";
+import { AuthGuard,canDeactivateGuard } from "../authGuard.service";
 import { AuthServiceService } from "../authService.service";
 import { BooksService } from "./appService/books.service";
 import { UsernameService } from "./appService/username.service";
