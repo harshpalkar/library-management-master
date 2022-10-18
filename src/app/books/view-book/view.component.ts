@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BooksService } from 'src/app/core/appService/books.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { BooksService } from 'src/app/core/appService/books.service';
 
 export class ViewComponent implements OnInit {
   
-  constructor(private route : ActivatedRoute, private _books : BooksService) {
+  constructor(private route : ActivatedRoute, private _router : Router, private _books : BooksService) {
     this.hi = this._books.data
   }
   
@@ -32,4 +32,8 @@ export class ViewComponent implements OnInit {
   id:string = 'id';
   author:string = 'author'
   books:string = 'book'
+
+  backBtn(){
+    this._router.navigate(['./books'])
+  }
 }
