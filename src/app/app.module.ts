@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LibraryComponent } from './library/library.component';
 import { UserLoginComponent } from './library/user-login/user-login.component';
-import { LandingPageComponent } from './landingPage/landingPage.component';
+import { landingPageModule } from './landingPage/landingPage.module';
 import { HeaderComponent } from './shared/header/header.component';
 import { booksRoutingModule } from './books/books-routing-module';
 import { appRoutingModule } from './app-routing-module';
@@ -19,7 +19,6 @@ import {HttpClientModule} from '@angular/common/http'
       HeaderComponent,
       LibraryComponent,
       UserLoginComponent,
-      LandingPageComponent,
       HeaderComponent,
    ],
   imports: [

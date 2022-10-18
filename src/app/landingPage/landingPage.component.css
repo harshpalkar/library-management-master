@@ -20,6 +20,9 @@
 
 .heading {
     font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-right: 50px;
     font-family: "Poppins";
     font: bold;
@@ -33,4 +36,8 @@
 
 .heading>a {
     cursor: pointer;
+}
+.btn{
+    border: 1px solid black;
+    margin-left: 200px;
 }

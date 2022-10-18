@@ -12,7 +12,8 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit() {
   }
-  myFunction(){
-    this.router.navigate(['/login'])
+
+  forwardBtn(){
+    this.router.navigate(['./login'])
   }
 }
