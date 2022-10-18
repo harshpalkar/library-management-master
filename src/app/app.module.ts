@@ -10,6 +10,7 @@ import { appRoutingModule } from './app-routing-module';
 import { landingpageRoutingModule } from './landingPage/landingpage-routing-module';
 import { SharedModule } from './shared/shared.module';
 import { coreModule } from './core/core.module';
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { coreModule } from './core/core.module';
     appRoutingModule,
     booksRoutingModule,
     landingpageRoutingModule,
-    coreModule
+    coreModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

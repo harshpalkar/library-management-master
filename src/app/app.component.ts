@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 
 
@@ -6,42 +7,42 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy, AfterContentChecked,AfterContentInit,AfterViewChecked,AfterViewInit  {
+export class AppComponent implements OnInit{
   title = 'my-first-project';
 
-  constructor(){
+  constructor(private http : HttpClient){
      console.log('Constructor called');
   }
-  ngOnchanges(changes: SimpleChanges){
-    console.log('ngOnChanges called');
-    console.log(changes);
+  // ngOnchanges(changes: SimpleChanges){
+  //   console.log('ngOnChanges called');
+  //   console.log(changes);
 
-  }
+  // }
   ngOnInit(){
     console.log('ngOnInit called');
   }
 
-  ngDoCheck(){
-    console.log('ngDoCheck called');
-  }
+  // ngDoCheck(){
+  //   console.log('ngDoCheck called');
+  // }
 
-  ngAfterContentInit(){
-    console.log('AfterContentInit called');
-  }
-  ngAfterContentChecked(){
-    console.log('AfterContentChecked called');
-  }
+  // ngAfterContentInit(){
+  //   console.log('AfterContentInit called');
+  // }
+  // ngAfterContentChecked(){
+  //   console.log('AfterContentChecked called');
+  // }
 
-  ngAfterViewInit(){
-    console.log('AfterViewInit called');
-  }
+  // ngAfterViewInit(){
+  //   console.log('AfterViewInit called');
+  // }
 
-  ngAfterViewChecked(){
-    console.log('AfterViewChecked called');
-  }
+  // ngAfterViewChecked(){
+  //   console.log('AfterViewChecked called');
+  // }
 
-  ngOnDestroy(){
-    console.log('ngOnDestroy called');
-  }
+  // ngOnDestroy(){
+  //   console.log('ngOnDestroy called');
+  // }
 }
 
