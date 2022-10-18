@@ -15,9 +15,8 @@
     </nav>
 
     <div class="user" *ngIf="CurrentUser.length > 0">
-        <i class="fa-solid fa-user"> </i>
         <div class="hi">
-            <img class="user-img" src="../../../assets/icons8-male-user-30.png" /> {{ CurrentUser }}
+            <i class="fa-solid fa-user fa-2x user-img"></i>{{ CurrentUser }}
             <div class="card">
                 <button (click)="logout()" class="btn btn-danger">Logout</button>
             </div>

@@ -25,7 +25,7 @@ export class ViewComponent implements OnInit {
     console.log(id);
     this.paramId = id;
     this.fetchBook()
-    console.log('boks',this.book);
+    console.log('books',this.book);
   }
   paramId : any;
   book: any;
