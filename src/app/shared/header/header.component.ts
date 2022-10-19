@@ -2,6 +2,7 @@ import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsernameService } from 'src/app/core/appService/username.service';
 import { BooksService } from '../../core/appService/books.service';
+import { GetFPipe } from './getF.pipe';
 
 @Component({
   selector: 'app-header',

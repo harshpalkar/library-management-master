@@ -11,6 +11,7 @@ import { landingpageRoutingModule } from './landingPage/landingpage-routing-modu
 import { SharedModule } from './shared/shared.module';
 import { coreModule } from './core/core.module';
 import {HttpClientModule} from '@angular/common/http'
+import { GetFPipe } from './shared/header/getF.pipe';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import {HttpClientModule} from '@angular/common/http'
       HeaderComponent,
       LibraryComponent,
       UserLoginComponent,
-      HeaderComponent,
+      HeaderComponent,GetFPipe
    ],
   imports: [
     BrowserModule,

@@ -22,6 +22,17 @@
         <button class="btn btn-success issue" routerLink="issue">
       Issue a Book
     </button>
-    </div>
+    <br>
+       <ng-container  *ngIf="!hidden"  >
+        <!-- <div class="card ">
+            <div class="title">
+                Your Issued Book
+            </div>
+            <ul class="book">
+                <li>{{book}}</li>
+            </ul>
+        </div> -->
+       </ng-container>
+
 </div>
 <router-outlet></router-outlet>
