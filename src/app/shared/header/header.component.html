@@ -16,7 +16,8 @@
 
     <div class="user" *ngIf="CurrentUser.length > 0">
         <div class="hi">
-            <i class="fa-solid fa-user fa-2x user-img"></i>{{ CurrentUser }}
+            <span class="rounded-circle bg-light p-2 text-dark">{{ CurrentUser | getF | uppercase}}</span> {{CurrentUser | titlecase}}
+            <!-- <i class="fa-duotone fa-circle user-img"></i>{{ CurrentUser | slice:0:1 | uppercase}}    -->
             <div class="card">
                 <button (click)="logout()" class="btn btn-dark">Logout</button>
             </div>

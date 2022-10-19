@@ -1106,7 +1106,7 @@ onSubmit(bookname:string){
         }
       }
     })
-
+this.issuedBook = bookname
   console.log(this.userData)
 
   }
@@ -1167,5 +1167,12 @@ changeVisible(){
   cancelBook() {
     
   }
+
+getIssuedBookOfCurrentUser() {
+  const tp = this.userData.filter(ele => {
+    return ele.Name === this.currentLoggedIn.name
+  })
+  return tp
+}
 
 }

@@ -3,7 +3,6 @@ html {
     background-color: black;
 }
 
-table,
 th,
 tr {
     width: 60%;
@@ -23,7 +22,25 @@ td {
 td {
     font-size: 18px;
 }
+.bookIssued{
+    font-size: 20px;
+    border: 2px solid black;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+}
 
+.title{
+    font-size: 20px;
+    margin-bottom: 120px;
+    color: whitesmoke;
+}
 .tableDisplay {
     display: flex;
     /* width: 800px; */
@@ -31,6 +48,12 @@ td {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+.book{
+    font-size: 15px;
 }
 
 .issue {
@@ -148,3 +171,17 @@ td {
 .issue {
     margin-top: 30px;
 }
+
+/* .card {
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+    border-radius: 0px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+} */
