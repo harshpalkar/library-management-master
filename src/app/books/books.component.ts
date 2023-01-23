@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { BooksService } from '../core/appService/books.service';
 import { UsernameService } from '../core/appService/username.service';
@@ -50,6 +49,5 @@ export class BooksComponent implements OnInit {
     console.log(target);
     
     this.router.navigate([`books/view/${target.innerHTML}`])
-    // console.log("This book works ");
   }
 }

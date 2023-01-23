@@ -4,8 +4,6 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { canComponentDeactivate, canDeactivateGuard } from 'src/app/authGuard.service';
 import { BooksService } from 'src/app/core/appService/books.service';
-import { BooksComponent } from '../books.component';
-import { booksModule } from '../books.module';
 
 @Component({
   selector: 'app-add-new-book',
