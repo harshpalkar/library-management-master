@@ -25,7 +25,7 @@ export class BooksComponent implements OnInit {
   currentUser:any;
 
   hii:string = ''
-  a:string = "Currently issued book : "
+  a:string = "Your currently issued book : "
 
   ngOnInit() {
       this.hii = this._book.getIssuedBook()[0]
@@ -35,7 +35,7 @@ export class BooksComponent implements OnInit {
         this.user = uname
         console.log(this.user);
       })
-      this.msg = `Welcome, ${this.user}`;
+      this.msg = `Welcome, ${this.user}.`;
       console.log(this.hi);
   }
   isFormHidden : boolean = true;
