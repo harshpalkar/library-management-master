@@ -43,7 +43,7 @@ export class UserLoginComponent implements OnInit {
       const temp = this.users.filter((item)=> item.Name === name);
       if(temp.length === 0){
         const newUser =  {
-          Name : name,
+          Name : name.toLocaleLowerCase(),
           Issued : []
       }
       this.users.push(newUser);

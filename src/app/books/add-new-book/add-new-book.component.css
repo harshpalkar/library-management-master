@@ -33,3 +33,6 @@
 .back{
     font-family: 'Inter';
 }
+.disabled{
+    display: none;
+}

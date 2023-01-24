@@ -24,14 +24,19 @@ export class BooksComponent implements OnInit {
    
   currentUser:any;
 
+  hii:string = ''
+  a:string = "Currently issued book : "
+
   ngOnInit() {
-    this._username.finalUser.subscribe(uname => {
-      console.log('hello ->',uname)
-      this.user = uname
-      console.log(this.user);
-    })
-    this.msg = `Welcome, ${this.user}`;
-    console.log(this.hi);
+      this.hii = this._book.getIssuedBook()[0]
+      
+      this._username.finalUser.subscribe(uname => {
+        console.log('hello ->',uname)
+        this.user = uname
+        console.log(this.user);
+      })
+      this.msg = `Welcome, ${this.user}`;
+      console.log(this.hi);
   }
   isFormHidden : boolean = true;
 

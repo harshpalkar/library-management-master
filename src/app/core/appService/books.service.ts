@@ -43,7 +43,8 @@ data = [
     'Author' : 'Morgan Housel',
     'Quantity' : 5,
     'Summary' : 'The Psychology of Money explores how money moves around in an economy and how personal biases and the emotional factor play an important role in our financial decisions, as well as how to think more rationally and make better decisions when it comes to money.'
-  },{
+  },
+  {
     'id' : 6,
     'Book' : 'And the Mountains echoed',
     'Author' : 'Khaled Hosseini',
@@ -161,6 +162,17 @@ changeVisible(){
   }
 
   cancelBook() {
+    
+  }
+  abc:boolean = false;
+  getIssuedBook() {
+    let res:any = []
+    this.userData.map(ele => {
+      if(ele.Name === this.currentLoggedIn.name){
+        res = ele.Issued
+      }
+    })
+    return res
     
   }
 
