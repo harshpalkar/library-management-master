@@ -16,12 +16,22 @@
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
+  background-image: url("../../../assets/img/undraw_login_re_4vu2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
 }
-
+/* .formContainer {
+  margin-left: 50rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  justify-content: center;
+} */
 .mainContainer > * {
   margin-top: 6px;
+  margin-left: 800px;
 }
 
 .bookDesc {

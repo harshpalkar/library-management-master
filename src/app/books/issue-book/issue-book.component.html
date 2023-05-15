@@ -1,22 +1,24 @@
-<div class="back">
-  <button class="btn btn-transparent back" (click)="goback()"><i class="fa-solid fa-arrow-left"></i></button>
-</div>
-<div class="container1">
-  <form id="form2" #myform='ngForm' (ngSubmit)="onSubmit(myform)">
+<div class="mainContainer">
+  <div class="back">
+    <button class="btn btn-transparent back" (click)="goback()"><i class="fa-solid fa-arrow-left"></i></button>
+  </div>
+  <div class="container1">
+    <form id="form2" #myform='ngForm' (ngSubmit)="onSubmit(myform)">
       <div class="col-md-4">
-          <select name="Book" ngModel class="form-control" id="books">
-            <option value="">Issue a book</option>
+        <select name="Book" ngModel class="form-control" id="books">
+          <option value="">Issue a book</option>
           <ng-container *ngFor="let item of hi">
-              <option value={{item.Book}}>{{item.Book}}</option>
+            <option value={{item.Book}}>{{item.Book}}</option>
           </ng-container>
-
-</select>
+          
+        </select>
           <button class="btn btn-dark issue">Issue</button>
           <div class="tp">or</div>
-      </div>
-  </form>
-  <button class="btn btn-danger return" (click)="returnBook(myform)">Return</button>
-  <div class="issuedBook">
+        </div>
+      </form>
+      <button class="btn btn-danger return" (click)="returnBook(myform)">Return</button>
+      <div class="issuedBook">
       {{issuedBook}}
+    </div>
   </div>
 </div>

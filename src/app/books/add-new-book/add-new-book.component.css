@@ -1,35 +1,43 @@
 .form-group {
-    font-family: 'Inter';
-    margin-left: 4px;
+  font-family: "Inter";
+  margin-left: 4px;
 }
-
+.mainContainer {
+  background-image: url("../../../assets/img/undraw_reading_list_re_bk72.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html {
+  height: 800vh;
+  width: 100%;
+}
 .form-control {
-    width: 300px;
-    font-family: Inter;
+  width: 300px;
+  font-family: Inter;
 }
 
 .forms {
-    height: max-content;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 .none {
-    display: none;
+  display: none;
 }
-.new{
-    font-family: 'Inter';
-    display: flex;
-    justify-content: center;
+.new {
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
 }
-.submit{
-    font-family: 'Inter';
-    margin: 4px;
+.submit {
+  font-family: "Inter";
+  margin: 4px;
 }
 
-.cancel{
-    font-family: 'Inter';
+.cancel {
+  font-family: "Inter";
 }
-.back{
-    font-family: 'Inter';
+.back {
+  font-family: "Inter";
 }

@@ -10,11 +10,13 @@
   justify-content: flex-end;
   align-items: center;
   height: 95vh;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  /* background: url('../../../img/undraw_road_to_knowledge_m8s0.svg'); */
+  background-size: auto;
+  background: url("../../assets/img/undraw_welcoming_re_x0qo-green.svg");
+  background-color: black;
+  background-position: relative;
+  color: rgb(255, 255, 255);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   /* background-color: blue; */
 }
 
@@ -40,4 +42,9 @@
 .btn {
   border: 1px solid black;
   margin-left: 200px;
+  padding: 8px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
 }
